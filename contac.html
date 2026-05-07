@@ -1,0 +1,232 @@
+<!-- <!DOCTYPE html> le dice al navegador
+     que este archivo es una página HTML -->
+<!DOCTYPE html>
+
+<!-- html es el inicio de toda la página -->
+
+<!-- lang="es" indica que la página
+     está en español -->
+<html lang="es">
+
+<!-- head contiene configuraciones
+     invisibles de la página -->
+<head>
+
+    <!-- meta proporciona información
+         importante al navegador -->
+
+    <!-- charset="UTF-8" permite usar:
+         tildes, ñ y caracteres especiales -->
+    <meta charset="UTF-8">
+
+    <!-- viewport ayuda a que la página
+         se adapte a celulares -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <!-- width=device-width hace
+         que la página use el ancho
+         del dispositivo -->
+
+    <!-- initial-scale=1.0 controla
+         el tamaño inicial -->
+
+    <!-- title cambia el nombre que aparece
+         en la pestaña del navegador -->
+    <title>Contacto</title>
+
+    <!-- Bootstrap CSS -->
+
+    <!-- link conecta archivos externos -->
+
+    <!-- href contiene el enlace -->
+
+    <!-- rel="stylesheet" significa
+         que el archivo es de estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- CSS propio -->
+
+    <!-- Este archivo contiene
+         tus estilos personalizados -->
+    <link rel="stylesheet" href="style.css">
+
+<!-- Fin del head -->
+</head>
+
+<!-- body contiene todo lo visible
+     de la página -->
+<body>
+
+    <!-- =========================
+         ENCABEZADO
+    ========================= -->
+
+    <!-- header es la parte de arriba
+         de la página -->
+    <header class="text-center p-3">
+
+        <!-- text-center centra el texto -->
+
+        <!-- p-3 agrega espacio interno -->
+
+        <!-- h1 es el título principal -->
+        <h1>Contacto</h1>
+
+
+
+    <!-- Fin del encabezado -->
+    </header>
+
+    <!-- =========================
+         CONTENIDO PRINCIPAL
+    ========================= -->
+
+    <!-- main representa el contenido principal -->
+    <main class="container mt-5">
+
+        <!-- container centra el contenido -->
+
+        <!-- mt-5 agrega espacio arriba -->
+
+        <!-- section crea una sección -->
+        <section class="mb-4">
+
+            <!-- mb-4 agrega espacio abajo -->
+
+            <!-- h2 es un subtítulo -->
+            <h2>Formulario de contacto</h2>
+
+            <!-- p significa párrafo -->
+            <p>
+                Puedes enviarnos un mensaje utilizando el siguiente formulario.
+            </p>
+
+            <!-- FORMULARIO -->
+
+            <!-- form crea un formulario -->
+            <form>
+
+                <!-- NOMBRE -->
+
+                <!-- div organiza contenido -->
+                <div class="mb-3">
+
+                    <!-- mb-3 agrega espacio abajo -->
+
+                    <!-- label es el texto
+                         que describe el campo -->
+                    <label class="form-label">
+
+                        Nombre
+                    </label>
+
+                    <!-- input crea una caja
+                         para escribir -->
+                    <input type="text"
+                           class="form-control"
+                           placeholder="Ingresa tu nombre">
+
+                    <!-- type="text"
+                         permite escribir texto -->
+
+                    <!-- form-control da
+                         estilo Bootstrap -->
+
+                    <!-- placeholder muestra
+                         texto de ejemplo -->
+
+                </div>
+
+                <!-- CORREO -->
+
+                <div class="mb-3">
+
+                    <label class="form-label">
+
+                        Correo electrónico
+                    </label>
+
+                    <!-- type="email"
+                         sirve para correos -->
+                    <input type="email"
+                           class="form-control"
+                           placeholder="Ingresa tu correo">
+
+                </div>
+
+                <!-- MENSAJE -->
+
+                <div class="mb-3">
+
+                    <label class="form-label">
+
+                        Mensaje
+                    </label>
+
+                    <!-- textarea crea un cuadro
+                         grande para escribir -->
+                    <textarea class="form-control"
+                              rows="5"
+                              placeholder="Escribe tu mensaje"></textarea>
+
+                    <!-- rows controla
+                         la altura -->
+
+                </div>
+
+                <!-- BOTÓN -->
+
+                <!-- button crea un botón -->
+                <button type="submit"
+                        class="btn btn-primary">
+
+                    <!-- submit envía
+                         el formulario -->
+
+                    <!-- btn btn-primary
+                         agrega diseño Bootstrap -->
+
+                    Enviar mensaje
+                </button>
+
+            <!-- Fin del formulario -->
+            </form>
+
+        <!-- Fin de la sección -->
+        </section>
+
+    <!-- Fin del contenido principal -->
+    </main>
+
+    <!-- =========================
+         PIE DE PÁGINA
+    ========================= -->
+
+    <!-- footer es la parte
+         de abajo de la página -->
+    <footer class="text-center p-3">
+
+        <p>
+
+            <!-- &copy; crea el símbolo © -->
+            &copy; 2026 Mi Página Web
+
+        </p>
+
+    </footer>
+
+    <!-- Bootstrap JS -->
+
+    <!-- script conecta JavaScript -->
+
+    <!-- Este script hace funcionar
+         Bootstrap y el menú -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Fin del body -->
+</body>
+
+<!-- Fin del documento HTML -->
+</html>git 
