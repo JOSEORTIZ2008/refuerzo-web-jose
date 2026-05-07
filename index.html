@@ -1,132 +1,253 @@
+<!-- <!DOCTYPE html> le dice al navegador
+     que este archivo es una página HTML -->
 <!DOCTYPE html>
+
+<!-- html es el inicio de toda la página -->
+
+<!-- lang="es" significa que el idioma
+     de la página es español -->
 <html lang="es">
 
 <!-- =========================
      1. CONFIGURACIÓN (HEAD)
 ========================= -->
+
+<!-- head contiene configuraciones
+     invisibles de la página -->
 <head>
 
+    <!-- meta sirve para dar información
+         importante al navegador -->
     <meta charset="UTF-8">
 
+    <!-- charset="UTF-8" permite usar:
+         tildes, ñ y símbolos especiales -->
+
+    <!-- viewport ayuda a que la página
+         se adapte a celulares -->
     <meta name="viewport"
+
+          <!-- width=device-width hace que
+               la página use el ancho del dispositivo -->
+
+          <!-- initial-scale=1.0 controla
+               el tamaño inicial -->
           content="width=device-width, initial-scale=1.0">
 
+    <!-- title es el nombre que aparece
+         en la pestaña del navegador -->
     <title>Mi Página Sencilla</title>
 
     <!-- Bootstrap CSS -->
+
+    <!-- link conecta archivos externos -->
+
+    <!-- href contiene el enlace del archivo -->
+
+    <!-- rel="stylesheet" significa
+         que el archivo es de estilos CSS -->
+
+    <!-- Bootstrap es una librería
+         que ayuda a crear páginas bonitas -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
           rel="stylesheet">
 
     <!-- CSS propio -->
+
+    <!-- Este link conecta tu archivo CSS
+         llamado style.css -->
     <link rel="stylesheet" href="style.css">
 
+<!-- Fin del head -->
 </head>
 
 <!-- =========================
      2. CUERPO DE LA PÁGINA
 ========================= -->
+
+<!-- body contiene TODO lo visible
+     de la página -->
 <body>
 
     <!-- =========================
          3. ENCABEZADO
     ========================= -->
+
+    <!-- header es la parte de arriba
+         de la página -->
     <header class="text-center p-3">
 
+        <!-- class agrega estilos -->
+
+        <!-- text-center centra el texto -->
+
+        <!-- p-3 agrega espacio interno -->
+
+        <!-- h1 es el título principal -->
         <h1>Bienvenido a mi página web</h1>
 
         <!-- =========================
              4. MENÚ (DROPDOWN)
         ========================= -->
+
+        <!-- div sirve para crear cajas
+             o dividir contenido -->
         <div class="dropdown mt-3">
+
+            <!-- dropdown crea un menú desplegable -->
+
+            <!-- mt-3 agrega espacio arriba -->
+
+            <!-- button crea un botón -->
             <button class="btn btn-secondary dropdown-toggle"
+
+                    <!-- btn crea estilo de botón -->
+
+                    <!-- btn-secondary agrega color -->
+
+                    <!-- dropdown-toggle activa
+                         el menú desplegable -->
                     type="button"
+
+                    <!-- type="button" indica
+                         que es un botón -->
+
+                    <!-- data-bs-toggle="dropdown"
+                         activa el menú desplegable
+                         de Bootstrap -->
                     data-bs-toggle="dropdown">
+
+                <!-- Texto visible del botón -->
                 Menú
             </button>
 
+            <!-- ul significa lista -->
             <ul class="dropdown-menu">
+
+                <!-- li significa elemento
+                     de la lista -->
                 <li>
+
+                    <!-- a crea enlaces -->
+
+                    <!-- dropdown-item da estilo
+                         a cada opción -->
+
+                    <!-- href="#que-es"
+                         lleva a la sección
+                         llamada que-es -->
                     <a class="dropdown-item" href="#que-es">
+
                         ¿Qué es el mantenimiento de sistemas informáticos?
                     </a>
                 </li>
 
                 <li>
                     <a class="dropdown-item" href="#mantenimiento-preventivo">
+
                         Mantenimiento preventivo
                     </a>
                 </li>
 
                 <li>
                     <a class="dropdown-item" href="#mantenimiento-correctivo">
+
                         Mantenimiento correctivo
                     </a>
                 </li>
 
                 <li>
                     <a class="dropdown-item" href="#mantenimiento-predictivo">
+
                         Mantenimiento predictivo
                     </a>
                 </li>
 
                 <li>
                     <a class="dropdown-item" href="#aseguramiento">
+
                         Aseguramiento de la operación del sistema informático
                     </a>
                 </li>
 
                 <li>
                     <a class="dropdown-item" href="#seguridad">
+
                         Seguridad informática
                     </a>
                 </li>
 
                 <li>
                     <a class="dropdown-item" href="#respaldo">
+
                         Respaldo de información
                     </a>
                 </li>
 
                 <li>
                     <a class="dropdown-item" href="#monitoreo">
+
                         Monitoreo del sistema
                     </a>
                 </li>
 
                 <li>
                     <a class="dropdown-item" href="#actualizacion">
+
                         Actualización de software
                     </a>
                 </li>
 
                 <li>
                     <a class="dropdown-item" href="#herramientas">
+
                         Herramientas utilizadas
                     </a>
                 </li>
 
                 <li>
                     <a class="dropdown-item" href="#importancia">
+
                         Importancia del mantenimiento y aseguramiento
                     </a>
                 </li>
+
+            <!-- Fin de la lista -->
             </ul>
 
+        <!-- Fin del menú -->
         </div>
 
+    <!-- Fin del encabezado -->
     </header>
 
     <!-- =========================
          5. CONTENIDO PRINCIPAL
     ========================= -->
+
+    <!-- main representa el contenido principal -->
     <main class="container mt-4">
+
+        <!-- container centra el contenido -->
+
+        <!-- mt-4 agrega espacio arriba -->
 
         <!-- =========================
              ¿QUÉ ES?
         ========================= -->
+
+        <!-- section crea una sección -->
+
+        <!-- id sirve como identificador -->
+
+        <!-- class="mb-3"
+             agrega espacio abajo -->
         <section id="que-es" class="mb-3">
+
+            <!-- h2 es un subtítulo -->
             <h2>¿Qué es el mantenimiento de sistemas informáticos?</h2>
 
+            <!-- p significa párrafo -->
             <p>
                 El mantenimiento de sistemas informáticos es el conjunto de actividades 
                 realizadas para garantizar el correcto funcionamiento de computadoras,
@@ -141,7 +262,13 @@
         <!-- =========================
              MANTENIMIENTO PREVENTIVO
         ========================= -->
+
         <section id="mantenimiento-preventivo" class="mb-3">
+
+            <!-- id identifica esta sección -->
+
+            <!-- mb-3 agrega espacio abajo -->
+
             <h2>Mantenimiento preventivo</h2>
 
             <p>
@@ -157,7 +284,9 @@
         <!-- =========================
              MANTENIMIENTO CORRECTIVO
         ========================= -->
+
         <section id="mantenimiento-correctivo" class="mb-3">
+
             <h2>Mantenimiento correctivo</h2>
 
             <p>
@@ -172,7 +301,9 @@
         <!-- =========================
              MANTENIMIENTO PREDICTIVO
         ========================= -->
+
         <section id="mantenimiento-predictivo" class="mb-3">
+
             <h2>Mantenimiento predictivo</h2>
 
             <p>
@@ -187,7 +318,9 @@
         <!-- =========================
              ASEGURAMIENTO DEL SISTEMA
         ========================= -->
+
         <section id="aseguramiento" class="mb-3">
+
             <h2>Aseguramiento de la operación del sistema informático</h2>
 
             <p>
@@ -202,7 +335,9 @@
         <!-- =========================
              SEGURIDAD INFORMÁTICA
         ========================= -->
+
         <section id="seguridad" class="mb-3">
+
             <h2>Seguridad informática</h2>
 
             <p>
@@ -217,7 +352,9 @@
         <!-- =========================
              RESPALDO DE INFORMACIÓN
         ========================= -->
+
         <section id="respaldo" class="mb-3">
+
             <h2>Respaldo de información</h2>
 
             <p>
@@ -231,7 +368,9 @@
         <!-- =========================
              MONITOREO DEL SISTEMA
         ========================= -->
+
         <section id="monitoreo" class="mb-3">
+
             <h2>Monitoreo del sistema</h2>
 
             <p>
@@ -245,7 +384,9 @@
         <!-- =========================
              ACTUALIZACIÓN DE SOFTWARE
         ========================= -->
+
         <section id="actualizacion" class="mb-3">
+
             <h2>Actualización de software</h2>
 
             <p>
@@ -259,7 +400,9 @@
         <!-- =========================
              HERRAMIENTAS UTILIZADAS
         ========================= -->
+
         <section id="herramientas" class="mb-3">
+
             <h2>Herramientas utilizadas</h2>
 
             <p>
@@ -273,7 +416,9 @@
         <!-- =========================
              IMPORTANCIA
         ========================= -->
+
         <section id="importancia" class="mb-3">
+
             <h2>Importancia del mantenimiento y aseguramiento</h2>
 
             <p>
@@ -284,19 +429,36 @@
             </p>
         </section>
 
+    <!-- Fin del contenido principal -->
     </main>
 
     <!-- =========================
          6. PIE DE PÁGINA
     ========================= -->
+
+    <!-- footer es la parte de abajo -->
     <footer class="text-center p-3">
-        <p>&copy; 2026 Mi Página Web</p>
+
+        <p>
+
+            <!-- &copy; crea el símbolo © -->
+            &copy; 2026 Mi Página Web
+
+        </p>
     </footer>
 
     <!-- =========================
          7. SCRIPTS (BOOTSTRAP)
     ========================= -->
+
+    <!-- script conecta JavaScript -->
+
+    <!-- Este script hace funcionar
+         el menú desplegable -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
+<!-- Fin del body -->
 </body>
+
+<!-- Fin del documento HTML -->
 </html>
