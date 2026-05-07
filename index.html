@@ -1,464 +1,216 @@
-<!-- <!DOCTYPE html> le dice al navegador
-     que este archivo es una página HTML -->
 <!DOCTYPE html>
-
-<!-- html es el inicio de toda la página -->
-
-<!-- lang="es" significa que el idioma
-     de la página es español -->
 <html lang="es">
-
-<!-- =========================
-     1. CONFIGURACIÓN (HEAD)
-========================= -->
-
-<!-- head contiene configuraciones
-     invisibles de la página -->
 <head>
-
-    <!-- meta sirve para dar información
-         importante al navegador -->
     <meta charset="UTF-8">
-
-    <!-- charset="UTF-8" permite usar:
-         tildes, ñ y símbolos especiales -->
-
-    <!-- viewport ayuda a que la página
-         se adapte a celulares -->
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <!-- width=device-width hace que 
-         la página use el ancho del dispositivo -->
-
-    <!-- initial-scale=1.0 controla
-         el tamaño inicial -->
-
-    <!-- title es el nombre que aparece
-         en la pestaña del navegador -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mantenimiento y aseguramiento de la operación del sistema informático</title>
-
-    <!-- Bootstrap CSS -->
-
-    <!-- link conecta archivos externos -->
-
-    <!-- href contiene el enlace del archivo -->
-
-    <!-- rel="stylesheet" significa
-         que el archivo es de estilos CSS -->
-
-    <!-- Bootstrap es una librería
-         que ayuda a crear páginas bonitas -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-          rel="stylesheet">
-
-    <!-- CSS propio -->
-
-    <!-- Este link conecta tu archivo CSS
-         llamado style.css -->
-    <link rel="stylesheet" href="style.css">
-
-<!-- Fin del head -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Configuración de la barra lateral */
+        @media (min-width: 768px) {
+            .sidebar {
+                position: sticky;
+                top: 20px;
+                height: calc(100vh - 40px);
+                overflow-y: auto;
+                border-right: 1px solid #dee2e6;
+            }
+        }
+        .nav-link { color: #0d6efd; font-weight: 500; }
+        .nav-link:hover { background-color: #e9ecef; border-radius: 5px; }
+        section { padding-top: 40px; margin-bottom: 40px; border-bottom: 1px solid #f0f0f0; padding-bottom: 20px; }
+        header { background-color: #212529; color: white; }
+    </style>
 </head>
 
-<!-- =========================
-     2. CUERPO DE LA PÁGINA
-========================= -->
-
-<!-- body contiene TODO lo visible
-     de la página -->
 <body>
-
-    <!-- =========================
-         3. ENCABEZADO
-    ========================= -->
-
-    <!-- header es la parte de arriba
-         de la página -->
-    <header class="text-center p-3">
-
-        <!-- class agrega estilos -->
-
-        <!-- text-center centra el texto -->
-
-        <!-- p-3 agrega espacio interno -->
-
-        <!-- h1 es el título principal -->
-        <h1>Bienvenido a mi página web</h1>
-
-        <!-- =========================
-             4. MENÚ (DROPDOWN)
-        ========================= -->
-
-        <!-- div sirve para crear cajas
-             o dividir contenido -->
+    <header class="text-center p-4">
+        <h1>Mantenimiento y aseguramiento de la operación del sistema informático</h1>
         <div class="dropdown mt-3">
-
-            <!-- dropdown crea un menú desplegable -->
-
-            <!-- mt-3 agrega espacio arriba -->
-
-            <!-- button crea un botón -->
-            <button class="btn btn-secondary dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown">
-
-                <!-- btn crea estilo de botón -->
-
-                <!-- btn-secondary agrega color -->
-
-                <!-- dropdown-toggle activa
-                     el menú desplegable -->
-
-                <!-- type="button" indica
-                     que es un botón -->
-
-                <!-- data-bs-toggle="dropdown"
-                     activa el menú desplegable
-                     de Bootstrap -->
-
-                <!-- Texto visible del botón -->
-                Menú
+            <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                Navegación Externa
             </button>
-
-            <!-- ul significa lista -->
             <ul class="dropdown-menu">
-
-                <!-- li significa elemento
-                     de la lista -->
-                <li>
-
-                    <!-- a crea enlaces -->
-
-                    <!-- dropdown-item da estilo
-                         a cada opción -->
-
-                    <!-- href="#que-es"
-                         lleva a la sección
-                         llamada que-es -->
-                    <a class="dropdown-item" href="#que-es">
-
-                        ¿Qué es el mantenimiento de sistemas informáticos?
-                    </a>
-                </li>
-
-                <li>
-                    <a class="dropdown-item" href="#mantenimiento-preventivo">
-
-                        Mantenimiento preventivo
-                    </a>
-                </li>
-
-                <li>
-                    <a class="dropdown-item" href="#mantenimiento-correctivo">
-
-                        Mantenimiento correctivo
-                    </a>
-                </li>
-
-                <li>
-                    <a class="dropdown-item" href="#mantenimiento-predictivo">
-
-                        Mantenimiento predictivo
-                    </a>
-                </li>
-
-                <li>
-                    <a class="dropdown-item" href="#aseguramiento">
-
-                        Aseguramiento de la operación del sistema informático
-                    </a>
-                </li>
-
-                <li>
-                    <a class="dropdown-item" href="#seguridad">
-
-                        Seguridad informática
-                    </a>
-                </li>
-
-                <li>
-                    <a class="dropdown-item" href="#respaldo">
-
-                        Respaldo de información
-                    </a>
-                </li>
-
-                <li>
-                    <a class="dropdown-item" href="#monitoreo">
-
-                        Monitoreo del sistema
-                    </a>
-                </li>
-
-                <li>
-                    <a class="dropdown-item" href="#actualizacion">
-
-                        Actualización de software
-                    </a>
-                </li>
-
-                <li>
-                    <a class="dropdown-item" href="#herramientas">
-
-                        Herramientas utilizadas
-                    </a>
-                </li>
-
-                <li>
-                    <a class="dropdown-item" href="#importancia">
-
-                        Importancia del mantenimiento y aseguramiento
-                    </a>
-                </li>
-
-            <!-- Fin de la lista -->
+                <li><a class="dropdown-item" href="index.html">Inicio</a></li>
+                <li><a class="dropdown-item" href="contact.html">Contacto</a></li>
             </ul>
-
-        <!-- Fin del menú -->
         </div>
-
-    <!-- Fin del encabezado -->
     </header>
 
-    <!-- =========================
-         5. CONTENIDO PRINCIPAL
-    ========================= -->
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <!-- BARRA DE NAVEGACIÓN LATERAL -->
+            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar mb-4">
+                <div class="p-3">
+                    <h5 class="text-uppercase text-muted small fw-bold">Índice de Temas</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="#que-es">¿Qué es?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#mantenimiento-preventivo">M. Preventivo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#mantenimiento-correctivo">M. Correctivo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#mantenimiento-predictivo">M. Predictivo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#aseguramiento">Aseguramiento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#seguridad">Seguridad Informática</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#respaldo">Respaldo de Datos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#monitoreo">Monitoreo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#actualizacion">Actualización</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#herramientas">Herramientas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#importancia">Importancia</a></li>
+                    </ul>
+                </div>
+            </nav>
 
-    <!-- main representa el contenido principal -->
-    <main class="container mt-4">
-
-        <!-- container centra el contenido -->
-
-        <!-- mt-4 agrega espacio arriba -->
-
-        <!-- =========================
-             ¿QUÉ ES?
-        ========================= -->
-
-        <!-- section crea una sección -->
-
-        <!-- id sirve como identificador -->
-
-        <!-- class="mb-3"
-             agrega espacio abajo -->
-        <section id="que-es" class="mb-3">
-
-            <!-- h2 es un subtítulo -->
-            <h2>¿Qué es el mantenimiento de sistemas informáticos?</h2>
-
-            <!-- p significa párrafo -->
-            <p>
-                El mantenimiento de sistemas informáticos es el conjunto de actividades 
+            <!-- CONTENIDO PRINCIPAL -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                
+                <section id="que-es">
+                    <h2>¿Qué es el mantenimiento de sistemas informáticos?</h2>
+                    <p> El mantenimiento de sistemas informáticos es el conjunto de actividades
                 realizadas para garantizar el correcto funcionamiento de computadoras,
-                redes, programas y dispositivos tecnológicos. Estas acciones permiten 
-                prevenir fallas, corregir errores y mejorar el rendimiento de los equipos, 
-                asegurando que trabajen de forma eficiente y segura. También ayuda a 
-                prolongar la vida útil del hardware y software, evitando daños que puedan 
+                redes, programas y dispositivos tecnológicos. Estas acciones permiten
+                prevenir fallas, corregir errores y mejorar el rendimiento de los equipos,
+                asegurando que trabajen de forma eficiente y segura. También ayuda a
+                prolongar la vida útil del hardware y software, evitando daños que puedan
                 afectar las actividades de una empresa o usuario.
-            </p>
-        </section>
+                </p>
+                    <div class="text-center mt-3">
+                        <img src="img/mantenimiento-informatico.jpg" class="img-fluid rounded shadow" alt="Mantenimiento General">
+                    </div>
+                </section>
 
-        <!-- =========================
-             MANTENIMIENTO PREVENTIVO
-        ========================= -->
+                <section id="mantenimiento-preventivo">
+                    <h2>Mantenimiento preventivo</h2>
+                    <p>
+                        El mantenimiento preventivo consiste en realizar revisiones
+                y cuidados periódicos antes de que aparezcan problemas en el sistema informático.
+                Incluye actividades como limpieza de equipos, actualización de programas, revisión
+                de cables, eliminación de archivos innecesarios y análisis con antivirus. Su principal
+                objetivo es reducir el riesgo de fallas y mantener el sistema funcionando correctamente
+                durante más tiempo                    </p>
+                    <div class="text-center mt-3">
+                        <img src="img/services-web-development-services-380x380.png" class="img-fluid rounded shadow" alt="Mantenimiento Preventivo">
+                    </div>
+                </section>
 
-        <section id="mantenimiento-preventivo" class="mb-3">
+                <section id="mantenimiento-correctivo">
+                    <h2>Mantenimiento correctivo</h2>
+                    <p>
+                        El mantenimiento correctivo se realiza cuando el sistema ya presenta
+                una falla o daño que afecta su funcionamiento. Este tipo de mantenimiento busca solucionar
+                problemas como virus, errores del sistema, daños en componentes o pérdida de información.
+                Gracias a estas reparaciones se logra restablecer el funcionamiento normal de los equipos
+                y evitar que los problemas empeoren.</p>
+                    <div class="text-center mt-3">
+                        <img src="img/MantenimientoPreventivo (1).png" class="img-fluid rounded shadow" alt="Mantenimiento Correctivo">
+                    </div>
+                </section>
 
-            <!-- id identifica esta sección -->
+                <section id="mantenimiento-predictivo">
+                    <h2>Mantenimiento predictivo</h2>
+                    <p>
+                    El mantenimiento predictivo se basa en el monitoreo constante del estado
+                de los equipos para detectar posibles fallas antes de que ocurran. Para ello se utilizan
+                herramientas de diagnóstico y programas que analizan el rendimiento del sistema, la temperatura
+                y el estado de los componentes. Este mantenimiento permite prevenir interrupciones y reducir
+                gastos de reparación inesperados.                    </p>
+                    <div class="text-center mt-3">
+                        <img src="img/mantenimiento predictivo.jpeg" class="img-fluid rounded shadow" alt="Mantenimiento Predictivo">
+                    </div>
+                </section>
 
-            <!-- mb-3 agrega espacio abajo -->
+                <section id="aseguramiento">
+                    <h2>Aseguramiento de la operación del sistema informático</h2>
+                    <p>
+                        El aseguramiento de la operación del sistema informático consiste en aplicar
+                medidas y procedimientos que garanticen el funcionamiento continuo, seguro y eficiente de los
+                sistemas tecnológicos. Su finalidad es proteger la información, mantener la estabilidad de
+                la red y asegurar que los servicios informáticos estén disponibles cuando se necesiten,
+                evitando pérdidas de datos o interrupciones.</p>
+                    <div class="text-center mt-3">
+                        <img src="img/Aseguramiento de la operación del sistema informático.jpg" class="img-fluid rounded shadow" alt="Aseguramiento">
+                    </div>
+                </section>
 
-            <h2>Mantenimiento preventivo</h2>
+                <section id="seguridad">
+                    <h2>Seguridad informática</h2>
+                    <p>
+                        La seguridad informática es una parte importante del aseguramiento de sistemas,
+                ya que protege los equipos y la información contra amenazas como virus, hackers y accesos no
+                autorizados. Para mantener la seguridad se utilizan antivirus, contraseñas seguras, firewalls
+                y actualizaciones constantes. Estas medidas ayudan a proteger los datos y evitar daños en el
+                sistema.</p>
+                    <div class="text-center mt-3">
+                        <img src="img/seguridad.jpg" class="img-fluid rounded shadow" alt="Seguridad Informática">
+                    </div>
+                </section>
 
-            <p>
-                El mantenimiento preventivo consiste en realizar revisiones 
-                y cuidados periódicos antes de que aparezcan problemas en el sistema informático. 
-                Incluye actividades como limpieza de equipos, actualización de programas, revisión 
-                de cables, eliminación de archivos innecesarios y análisis con antivirus. Su principal 
-                objetivo es reducir el riesgo de fallas y mantener el sistema funcionando correctamente 
-                durante más tiempo.
-            </p>
-        </section>
+                <section id="respaldo">
+                    <h2>Respaldo de información</h2>
+                    <p>
+                        El respaldo de información consiste en crear copias de seguridad de archivos
+                y datos importantes para evitar pérdidas en caso de fallas o accidentes. Los respaldos pueden
+                almacenarse en discos externos, servidores o servicios en la nube. Gracias a esta práctica es
+                posible recuperar información importante cuando ocurre algún problema en el sistema.                    </p>
+                    <div class="text-center mt-3">
+                        <img src="img/images.jpeg" class="img-fluid rounded shadow" alt="Respaldo">
+                    </div>
+                </section>
 
-        <!-- =========================
-             MANTENIMIENTO CORRECTIVO
-        ========================= -->
+                <section id="monitoreo">
+                    <h2>Monitoreo del sistema</h2>
+                    <p>
+                    El monitoreo del sistema permite supervisar constantemente el rendimiento y
+                funcionamiento de los equipos informáticos. Se controlan aspectos como el uso de memoria,
+                estado de la red, temperatura y rendimiento del procesador. Esto ayuda a detectar errores
+                rápidamente y tomar acciones antes de que afecten el funcionamiento del sistema.                    </p>
+                    <div class="text-center mt-3">
+                        <img src="img/Monitoreo del sistema.jpg" class="img-fluid rounded shadow" alt="Monitoreo">
+                    </div>
+                </section>
 
-        <section id="mantenimiento-correctivo" class="mb-3">
+                <section id="actualizacion">
+                    <h2>Actualización de software</h2>
+                    <p>
+                        La actualización de software consiste en instalar nuevas versiones de programas
+                y sistemas operativos para mejorar su funcionamiento y seguridad. Estas actualizaciones corrigen
+                errores, agregan nuevas funciones y protegen el sistema contra amenazas recientes. Mantener el
+                software actualizado ayuda a que los equipos trabajen de forma más rápida y segura.                    </p>
+                    <div class="text-center mt-3">
+                        <img src="img/Actualización de softwar.jpg" class="img-fluid rounded shadow" alt="Actualizaciones">
+                    </div>
+                </section>
 
-            <h2>Mantenimiento correctivo</h2>
+                <section id="herramientas">
+                    <h2>Herramientas utilizadas</h2>
+                    <p>
+                        En el mantenimiento y aseguramiento de sistemas informáticos se utilizan diferentes
+                herramientas que facilitan la detección y solución de problemas. Entre ellas se encuentran los antivirus,
+                programas de diagnóstico, software de monitoreo y herramientas de respaldo. Estas aplicaciones ayudan a
+                mantener los equipos en buen estado y mejorar su rendimiento.                   </p>
+                    <div class="text-center mt-3">
+                        <img src="img/herrramientas.jpg" class="img-fluid rounded shadow" alt="Herramientas">
+                    </div>
+                </section>
 
-            <p>
-                El mantenimiento correctivo se realiza cuando el sistema ya presenta 
-                una falla o daño que afecta su funcionamiento. Este tipo de mantenimiento busca solucionar 
-                problemas como virus, errores del sistema, daños en componentes o pérdida de información. 
-                Gracias a estas reparaciones se logra restablecer el funcionamiento normal de los equipos 
-                y evitar que los problemas empeoren.
-            </p>
-        </section>
+                <section id="importancia">
+                    <h2>Importancia del mantenimiento y aseguramiento</h2>
+                    <p>
+                        El mantenimiento y aseguramiento de sistemas informáticos es importante porque garantiza
+                el funcionamiento continuo y seguro de los equipos tecnológicos. Además, ayuda a proteger la información,
+                reducir costos de reparación, mejorar la productividad y evitar pérdidas de datos. Gracias a estas prácticas
+                los sistemas pueden operar de manera eficiente y confiable.                    </p>
+                    <div class="text-center mt-3">
+                        <img src="img/importancia.png" class="img-fluid rounded shadow" alt="Importancia">
+                    </div>
+                </section>
+                
+            </main>
+        </div>
+    </div>
 
-        <!-- =========================
-             MANTENIMIENTO PREDICTIVO
-        ========================= -->
-
-        <section id="mantenimiento-predictivo" class="mb-3">
-
-            <h2>Mantenimiento predictivo</h2>
-
-            <p>
-                El mantenimiento predictivo se basa en el monitoreo constante del estado 
-                de los equipos para detectar posibles fallas antes de que ocurran. Para ello se utilizan 
-                herramientas de diagnóstico y programas que analizan el rendimiento del sistema, la temperatura 
-                y el estado de los componentes. Este mantenimiento permite prevenir interrupciones y reducir 
-                gastos de reparación inesperados.
-            </p>
-        </section>
-
-        <!-- =========================
-             ASEGURAMIENTO DEL SISTEMA
-        ========================= -->
-
-        <section id="aseguramiento" class="mb-3">
-
-            <h2>Aseguramiento de la operación del sistema informático</h2>
-
-            <p>
-                El aseguramiento de la operación del sistema informático consiste en aplicar 
-                medidas y procedimientos que garanticen el funcionamiento continuo, seguro y eficiente de los 
-                sistemas tecnológicos. Su finalidad es proteger la información, mantener la estabilidad de 
-                la red y asegurar que los servicios informáticos estén disponibles cuando se necesiten, 
-                evitando pérdidas de datos o interrupciones.
-            </p>
-        </section>
-
-        <!-- =========================
-             SEGURIDAD INFORMÁTICA
-        ========================= -->
-
-        <section id="seguridad" class="mb-3">
-
-            <h2>Seguridad informática</h2>
-
-            <p>
-                La seguridad informática es una parte importante del aseguramiento de sistemas, 
-                ya que protege los equipos y la información contra amenazas como virus, hackers y accesos no 
-                autorizados. Para mantener la seguridad se utilizan antivirus, contraseñas seguras, firewalls 
-                y actualizaciones constantes. Estas medidas ayudan a proteger los datos y evitar daños en el 
-                sistema.
-            </p>
-        </section>
-
-        <!-- =========================
-             RESPALDO DE INFORMACIÓN
-        ========================= -->
-
-        <section id="respaldo" class="mb-3">
-
-            <h2>Respaldo de información</h2>
-
-            <p>
-                El respaldo de información consiste en crear copias de seguridad de archivos 
-                y datos importantes para evitar pérdidas en caso de fallas o accidentes. Los respaldos pueden 
-                almacenarse en discos externos, servidores o servicios en la nube. Gracias a esta práctica es 
-                posible recuperar información importante cuando ocurre algún problema en el sistema.
-            </p>
-        </section>
-
-        <!-- =========================
-             MONITOREO DEL SISTEMA
-        ========================= -->
-
-        <section id="monitoreo" class="mb-3">
-
-            <h2>Monitoreo del sistema</h2>
-
-            <p>
-                El monitoreo del sistema permite supervisar constantemente el rendimiento y 
-                funcionamiento de los equipos informáticos. Se controlan aspectos como el uso de memoria, 
-                estado de la red, temperatura y rendimiento del procesador. Esto ayuda a detectar errores 
-                rápidamente y tomar acciones antes de que afecten el funcionamiento del sistema.
-            </p>
-        </section>
-
-        <!-- =========================
-             ACTUALIZACIÓN DE SOFTWARE
-        ========================= -->
-
-        <section id="actualizacion" class="mb-3">
-
-            <h2>Actualización de software</h2>
-
-            <p>
-                La actualización de software consiste en instalar nuevas versiones de programas 
-                y sistemas operativos para mejorar su funcionamiento y seguridad. Estas actualizaciones corrigen 
-                errores, agregan nuevas funciones y protegen el sistema contra amenazas recientes. Mantener el 
-                software actualizado ayuda a que los equipos trabajen de forma más rápida y segura.
-            </p>
-        </section>
-
-        <!-- =========================
-             HERRAMIENTAS UTILIZADAS
-        ========================= -->
-
-        <section id="herramientas" class="mb-3">
-
-            <h2>Herramientas utilizadas</h2>
-
-            <p>
-                En el mantenimiento y aseguramiento de sistemas informáticos se utilizan diferentes 
-                herramientas que facilitan la detección y solución de problemas. Entre ellas se encuentran los antivirus, 
-                programas de diagnóstico, software de monitoreo y herramientas de respaldo. Estas aplicaciones ayudan a 
-                mantener los equipos en buen estado y mejorar su rendimiento.
-            </p>
-        </section>
-
-        <!-- =========================
-             IMPORTANCIA
-        ========================= -->
-
-        <section id="importancia" class="mb-3">
-
-            <h2>Importancia del mantenimiento y aseguramiento</h2>
-
-            <p>
-                El mantenimiento y aseguramiento de sistemas informáticos es importante porque garantiza 
-                el funcionamiento continuo y seguro de los equipos tecnológicos. Además, ayuda a proteger la información, 
-                reducir costos de reparación, mejorar la productividad y evitar pérdidas de datos. Gracias a estas prácticas 
-                los sistemas pueden operar de manera eficiente y confiable.
-            </p>
-        </section>
-
-    <!-- Fin del contenido principal -->
-    </main>
-
-    <!-- =========================
-         6. PIE DE PÁGINA
-    ========================= -->
-
-    <!-- footer es la parte de abajo -->
-    <footer class="text-center p-3">
-
-        <p>
-
-            <!-- &copy; crea el símbolo © -->
-            &copy; 2026 Mi Página Web
-
-        </p>
+    <footer class="text-center p-4 bg-dark text-white mt-5">
+        <p>&copy; 2026 Mantenimiento de Sistemas Informáticos - Gestión Profesional</p>
     </footer>
 
-    <!-- =========================
-         7. SCRIPTS (BOOTSTRAP)
-    ========================= -->
-
-    <!-- script conecta JavaScript -->
-
-    <!-- Este script hace funcionar
-         el menú desplegable -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Fin del body -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-<!-- Fin del documento HTML -->
 </html>
