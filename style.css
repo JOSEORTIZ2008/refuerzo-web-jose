@@ -1,0 +1,320 @@
+/* =========================
+   1. RESET GENERAL
+========================= */
+
+/* El * significa:
+   "esto se aplicará a TODA la página" */
+* {
+
+    /* margin es el espacio por fuera de las cosas
+       0 significa quitar todos los espacios */
+    margin: 0;
+
+    /* padding es el espacio por dentro
+       0 quita todos los espacios internos */
+    padding: 0;
+
+    /* box-sizing ayuda a que los tamaños
+       no se desordenen */
+    box-sizing: border-box;
+}
+
+/* =========================
+   2. ESTILOS DEL BODY
+========================= */
+
+/* body significa:
+   "todo el cuerpo de la página" */
+body {
+
+    /* font-family cambia el tipo de letra
+       Arial es la letra principal
+       sans-serif es una letra de respaldo */
+    font-family: Arial, sans-serif;
+
+    /* background-color cambia el color del fondo */
+    background-color: #f4f4f4;
+
+    /* color cambia el color del texto */
+    color: #333;
+
+    /* line-height separa las líneas del texto
+       para que sea más fácil leer */
+    line-height: 1.6;
+}
+
+/* =========================
+   3. ENCABEZADO
+========================= */
+
+/* header es la parte de arriba
+   de la página */
+header {
+
+    /* background agrega un fondo */
+
+    /* linear-gradient crea un fondo
+       con mezcla de colores */
+
+    /* 135deg indica la dirección
+       del degradado */
+
+    background: linear-gradient(135deg, #8000ff, #ce348b);
+
+    /* color cambia el texto a blanco */
+    color: white;
+
+    /* padding agrega espacio por dentro
+
+       30px = arriba y abajo
+       20px = izquierda y derecha */
+    padding: 30px 20px;
+
+    /* box-shadow agrega sombra */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Título principal */
+
+/* header h1 significa:
+   "el título principal del header" */
+header h1 {
+
+    /* font-size cambia el tamaño de letra */
+    font-size: 2.2rem;
+
+    /* margin-bottom agrega espacio abajo */
+    margin-bottom: 15px;
+}
+
+/* =========================
+   MENÚ FIJO
+========================= */
+
+header {
+
+    /* sticky hace que el menú
+       quede pegado arriba */
+    position: sticky;
+
+    /* top: 0 significa:
+       quedarse hasta arriba */
+    top: 0;
+
+    /* z-index hace que el menú
+       quede encima de otras cosas */
+    z-index: 1000;
+}
+
+/* =========================
+   4. BOTÓN DEL MENÚ
+========================= */
+
+/* .dropdown button significa:
+   "los botones dentro del menú" */
+.dropdown button {
+
+    /* Fondo blanco */
+    background-color: white;
+
+    /* Texto morado */
+    color: #8000ff;
+
+    /* none significa quitar el borde */
+    border: none;
+
+    /* bold pone el texto grueso */
+    font-weight: bold;
+
+    /* Espacio dentro del botón */
+    padding: 10px 20px;
+
+    /* border-radius redondea esquinas */
+    border-radius: 8px;
+
+    /* transition hace cambios suaves */
+    transition: 0.3s;
+}
+
+/* Hover significa:
+   "cuando el mouse pasa encima" */
+.dropdown button:hover {
+
+    /* Cambia el color del fondo */
+    background-color: #e6d4ff;
+
+    /* Cambia color del texto */
+    color: #5c00b3;
+}
+
+/* =========================
+   5. MENÚ DESPLEGABLE
+========================= */
+
+/* dropdown-menu es el menú
+   que se despliega */
+.dropdown-menu {
+
+    /* Esquinas redondeadas */
+    border-radius: 10px;
+
+    /* Sin borde */
+    border: none;
+
+    /* Sombra */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+
+    /* Altura máxima */
+    max-height: 300px;
+
+    /* Si hay demasiado contenido
+       aparecerá scroll */
+    overflow-y: auto;
+}
+
+/* Opciones del menú */
+.dropdown-item {
+
+    /* Animación suave */
+    transition: 0.2s;
+}
+
+/* Cuando el mouse pasa encima */
+.dropdown-item:hover {
+
+    /* Fondo morado */
+    background-color: #8000ff;
+
+    /* Texto blanco */
+    color: white;
+}
+
+/* =========================
+   6. CONTENIDO PRINCIPAL
+========================= */
+
+/* main es el contenido principal */
+main {
+
+    /* Espacio arriba */
+    padding-top: 20px;
+
+    /* Espacio abajo */
+    padding-bottom: 20px;
+}
+
+/* =========================
+   7. SECCIONES
+========================= */
+
+/* section son las cajas
+   donde va la información */
+section {
+
+    /* Fondo blanco */
+    background-color: white;
+
+    /* Espacio interno */
+    padding: 25px;
+
+    /* Esquinas redondeadas */
+    border-radius: 12px;
+
+    /* Espacio entre secciones */
+    margin-bottom: 20px;
+
+    /* Sombra */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+    /* Movimiento suave */
+    transition: transform 0.2s;
+}
+
+/* Efecto al pasar el mouse */
+section:hover {
+
+    /* Mueve la caja un poco arriba */
+    transform: translateY(-3px);
+}
+
+/* =========================
+   8. TÍTULOS
+========================= */
+
+/* h2 son subtítulos */
+h2 {
+
+    /* Texto morado */
+    color: #8000ff;
+
+    /* Espacio abajo */
+    margin-bottom: 15px;
+
+    /* Línea debajo del título */
+    border-bottom: 2px solid #ce348b;
+
+    /* Espacio debajo del texto */
+    padding-bottom: 5px;
+}
+
+/* =========================
+   9. PÁRRAFOS
+========================= */
+
+/* p significa párrafo */
+p {
+
+    /* justify acomoda el texto
+       parejo en ambos lados */
+    text-align: justify;
+
+    /* Tamaño del texto */
+    font-size: 1rem;
+}
+
+/* =========================
+   10. PIE DE PÁGINA
+========================= */
+
+/* footer es la parte de abajo */
+footer {
+
+    /* Fondo morado */
+    background-color: #8000ff;
+
+    /* Texto blanco */
+    color: white;
+
+    /* Espacio arriba */
+    margin-top: 30px;
+
+    /* Texto un poco más pequeño */
+    font-size: 0.9rem;
+}
+
+/* =========================
+   11. RESPONSIVE (CELULAR)
+========================= */
+
+/* @media sirve para adaptar
+   la página a celulares */
+@media (max-width: 768px) {
+
+    /* El título se hace más pequeño */
+    header h1 {
+
+        font-size: 1.5rem;
+    }
+
+    /* Menos espacio en secciones */
+    section {
+
+        padding: 18px;
+    }
+
+    /* El botón ocupa todo el ancho */
+    .dropdown button {
+
+        width: 100%;
+    }
+}
