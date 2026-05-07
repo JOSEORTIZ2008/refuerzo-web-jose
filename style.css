@@ -2,11 +2,32 @@
    1. ESTILOS GENERALES
 ========================= */
 
+/* body significa:
+   "todo el cuerpo de la página" */
 body{
+
+    /* background-color cambia
+       el color del fondo */
     background-color: #f4f6f9;
+
+    /* font-family cambia
+       el tipo de letra */
     font-family: Arial, sans-serif;
+
+    /* color cambia
+       el color del texto */
     color: #333;
+
+    /* margin controla el espacio
+       por fuera de los elementos */
+
+    /* 0 elimina los márgenes */
     margin: 0;
+
+    /* padding controla el espacio
+       por dentro */
+
+    /* 0 elimina espacios internos */
     padding: 0;
 }
 
@@ -14,14 +35,29 @@ body{
    2. ENCABEZADO
 ========================= */
 
+/* header es la parte
+   de arriba de la página */
 header{
+
+    /* Fondo azul */
     background-color: #0d6efd;
+
+    /* Texto blanco */
     color: white;
+
+    /* box-shadow agrega sombra */
     box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
 }
 
+/* header h1 significa:
+   "el título principal" */
 header h1{
+
+    /* font-size cambia
+       el tamaño del texto */
     font-size: 2.2rem;
+
+    /* margin: 0 elimina espacios */
     margin: 0;
 }
 
@@ -30,35 +66,81 @@ header h1{
 ========================= */
 
 /* este div seguirá la página */
+
+/* .dropdown es el menú */
 .dropdown{
+
+    /* fixed hace que el menú
+       quede fijo aunque bajes */
     position: fixed;
+
+    /* top controla la distancia
+       desde arriba */
     top: 15px;
+
+    /* right controla la distancia
+       desde la derecha */
     right: 15px;
+
+    /* z-index hace que el menú
+       quede encima de otras cosas */
     z-index: 1000;
 }
 
 /* botón del menú */
+
+/* .dropdown .btn significa:
+   "el botón dentro del menú" */
 .dropdown .btn{
+
+    /* Espacio interno */
     padding: 10px 20px;
+
+    /* Tamaño del texto */
     font-size: 1rem;
+
+    /* border-radius redondea
+       las esquinas */
     border-radius: 8px;
 }
 
 /* menú desplegable */
+
+/* .dropdown-menu es la caja
+   que aparece al abrir el menú */
 .dropdown-menu{
+
+    /* Esquinas redondeadas */
     border-radius: 10px;
+
+    /* none elimina bordes */
     border: none;
+
+    /* Sombra */
     box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
 }
 
 /* opciones */
+
+/* .dropdown-item son las
+   opciones del menú */
 .dropdown-item{
+
+    /* transition hace que
+       los cambios sean suaves */
     transition: background-color 0.3s;
 }
 
 /* efecto hover */
+
+/* :hover significa:
+   "cuando el mouse pasa encima" */
 .dropdown-item:hover{
+
+    /* Cambia el fondo a azul */
     background-color: #0d6efd;
+
+    /* Cambia el texto a blanco */
     color: white;
 }
 
@@ -66,25 +148,53 @@ header h1{
    4. CONTENIDO PRINCIPAL
 ========================= */
 
+/* main es el contenido principal */
 main{
+
+    /* Espacio abajo */
     padding-bottom: 30px;
 }
 
+/* section crea secciones
+   o cajas de contenido */
 section{
+
+    /* Fondo blanco */
     background-color: white;
+
+    /* Espacio interno */
     padding: 20px;
+
+    /* Esquinas redondeadas */
     border-radius: 12px;
+
+    /* Espacio debajo */
     margin-bottom: 20px;
+
+    /* Sombra */
     box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
 }
 
+/* section h2 son los subtítulos */
 section h2{
+
+    /* Color azul */
     color: #0d6efd;
+
+    /* Espacio debajo */
     margin-bottom: 15px;
 }
 
+/* section p significa:
+   "los párrafos dentro de section" */
 section p{
+
+    /* justify acomoda el texto
+       parejo en ambos lados */
     text-align: justify;
+
+    /* line-height separa líneas
+       para facilitar la lectura */
     line-height: 1.7;
 }
 
@@ -92,13 +202,25 @@ section p{
    5. PIE DE PÁGINA
 ========================= */
 
+/* footer es la parte
+   de abajo de la página */
 footer{
+
+    /* Fondo oscuro */
     background-color: #212529;
+
+    /* Texto blanco */
     color: white;
+
+    /* Espacio arriba */
     margin-top: 20px;
 }
 
+/* footer p significa:
+   "los párrafos del footer" */
 footer p{
+
+    /* Elimina márgenes */
     margin: 0;
 }
 
@@ -106,25 +228,39 @@ footer p{
    6. RESPONSIVE
 ========================= */
 
+/* @media sirve para adaptar
+   la página a celulares */
 @media (max-width: 768px){
 
+    /* El título se hace más pequeño */
     header h1{
+
         font-size: 1.6rem;
     }
 
+    /* Las secciones tienen
+       menos espacio interno */
     section{
+
         padding: 15px;
     }
 
+    /* Subtítulos más pequeños */
     section h2{
+
         font-size: 1.3rem;
     }
 
+    /* Texto más pequeño */
     section p{
+
         font-size: 0.95rem;
     }
 
+    /* El menú cambia un poco
+       de posición en celular */
     .dropdown{
+
         top: 10px;
         right: 10px;
     }
